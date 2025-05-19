@@ -1,4 +1,7 @@
 messages
+ ├── eslint.config.mjs
+ ├── messages.json
+ ├── nest-cli.json
  ├── package-lock.json
  ├── package.json
  ├─> src
@@ -14,6 +17,9 @@ messages
  │       └─> types
  │           └── Messages.type.ts
  ├─> test
- │   ├── app.e2e-spec.ts
- │   └── jest-e2e.json
+ │   ├── jest-e2e.json
+ │   └── messages.e2e.ts
+ ├─> tree
+ │   └── tree.txt
+ ├── tsconfig.build.json
  └── tsconfig.json
