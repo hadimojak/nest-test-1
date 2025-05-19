@@ -8,7 +8,7 @@ GET http://localhost:3000/messages
 
 
 ###
-GET http://localhost:3000/messages/asasdasd
+GET http://localhost:3000/messages/901
 
 
 
@@ -21,5 +21,5 @@ POST http://localhost:3000/messages
 Content-Type: application/json
 
 {
-    "content": "hi there"
+    "content": "hi there12"
 }

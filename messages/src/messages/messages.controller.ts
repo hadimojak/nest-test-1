@@ -12,7 +12,7 @@ import { MessagesService } from './messages.service';
 
 @Controller('messages')
 export class MessagesController {
-  constructor(public messageService: MessagesService) {}
+  constructor(public readonly messageService: MessagesService) {}
 
   @Get()
   async listMessages() {

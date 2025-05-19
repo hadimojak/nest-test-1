@@ -1,0 +1,19 @@
+messages
+ ├── package-lock.json
+ ├── package.json
+ ├─> src
+ │   ├── main.ts
+ │   └─> messages
+ │       ├─> dto
+ │       │   └── create-message.dto.ts
+ │       ├── messages.controller.spec.ts
+ │       ├── messages.controller.ts
+ │       ├── messages.module.ts
+ │       ├── messages.repository.ts
+ │       ├── messages.service.ts
+ │       └─> types
+ │           └── Messages.type.ts
+ ├─> test
+ │   ├── app.e2e-spec.ts
+ │   └── jest-e2e.json
+ └── tsconfig.json
