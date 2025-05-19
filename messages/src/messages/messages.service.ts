@@ -1,18 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { MessagesRepository } from './messages.repository';
-
+import { Injectable } from '@nestjs/common';
+import { ItemMap } from './types/Messages.type';
+@Injectable()
 export class MessagesService {
-  messagesRepo: MessagesRepository;
+  constructor(public messagesRepo: MessagesRepository) {}
 
-  constructor() {
-    this.messagesRepo = new MessagesRepository();
-  }
-
-  async findOne(id: string): Promise<{ content: string; id: number }> {
+  async findOne(id: string): Promise<{ message: string; id: number }> {
     return await this.messagesRepo.findOne(id);
   }
 
-  async findAll(): Promise<{ content: string; id: number }[]> {
+  async findAll(): Promise<ItemMap> {
     return await this.messagesRepo.findAll();
   }
 
